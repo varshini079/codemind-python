@@ -20,5 +20,3 @@ if(prime(n)):
                 break
     else:
         print("Not Mega Prime")
-        
-
