@@ -1,0 +1,11 @@
+n=int(input())
+t=str(n)
+l=int(t[::-1])
+r=n**2
+q=(l**2)
+w=str(q)
+d=int(w[::-1])
+if(d==r):
+    print("True")
+else:
+    print("False")
