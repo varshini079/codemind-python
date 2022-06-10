@@ -1,16 +1,19 @@
-def sd(n):
-    l=map(int,str(n))
+def se(n):
+    l=list(map(int,str(n)))
     c=0
-    p=len(str(n))
     for i in l:
-        if(i==0):
-            return(False)
-        elif(n%i==0):
+        if(i!=0 and n%i==0):
             c=c+1
-    if(c==p):
+    if(c==len(str(n))):
         return(True)
-x=int(input())
-y=int(input())
-for i in range(x,y+1):
-    if(sd(i)):
-        print(i,end=" ")
+    else:
+        return(False)
+    
+
+n=int(input())
+m=int(input())
+for i in range(n,m+1):
+    if(se(i)==True):
+        print(i,end=' ')
+        
+            
