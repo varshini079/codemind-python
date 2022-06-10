@@ -1,0 +1,8 @@
+n,x=map(int,input().split())
+t=str(n)
+p=len(t)
+r=int(t[::-1])
+y=n%(10**x)
+z=str(r%(10**x))
+e=int(z[::-1])
+print(abs(y-e))
